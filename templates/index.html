@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orchestrator Pro - Supply Chain Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .hero-section {
+            background-color: #007bff;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            border-radius: 0 0 40px 40px;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .card-section {
+            margin-top: 60px;
+            padding: 30px 0;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-header {
+            background-color: #2d3e50;
+            color: white;
+        }
+
+        .footer {
+            background-color: #2d3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: white;
+        }
+
+        .footer a:hover {
+            color: #f1f1f1;
+        }
+
+        .btn-custom {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 1rem;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #218838;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: #007bff;
+        }
+
+        .card:hover {
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    {% include "common_header_elements.html" %}
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Welcome to Orchestrator Pro</h1>
+        <p>Your ultimate tool for managing and optimizing supply chain operations.</p>
+        <a href="{{url_for('user_dashboard')}}" class="btn-custom">Start Now</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="container card-section">
+        <h2 class="text-center mb-5">Core Features</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <i class="feature-icon bi bi-box"></i>
+                        <h5>Order Management</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Track and manage orders seamlessly from placement to delivery.</p>
+                        <a href="#" class="btn btn-primary w-100">Manage Orders</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <i class="feature-icon bi bi-clipboard"></i>
+                        <h5>Inventory Management</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Keep track of inventory levels in real-time and avoid shortages.</p>
+                        <a href="#" class="btn btn-primary w-100">View Inventory</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <i class="feature-icon bi bi-bar-chart-line"></i>
+                        <h5>Analytics & Reports</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Generate reports to analyze performance, trends, and supply chain bottlenecks.</p>
+                        <a href="#" class="btn btn-primary w-100">View Reports</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 Orchestrator Pro | All Rights Reserved</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
